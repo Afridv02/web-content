@@ -1,6 +1,7 @@
 ---
 - name: Install Apache and deploy index.html from the variable
   become: yes
+  hosts: all
   vars:
     web_root: /var/www/html
 
